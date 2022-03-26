@@ -1,16 +1,10 @@
 // TODO: Include packages needed for this application
-
+const fs = require('fs');
 const inquirer = require('inquirer');
-// const generateMarkdown = require('./src/readme-template');
-// const { writeFile, copyFile } = require('./utils/generateMarkdown');
-
-
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
-    //Description, Table of Contents, Installation, Usage, License(badge), Contributing, Tests, and 
-    //Questions - Links Github account
-        //email address
-    //Table of Contents links to appropriate sections
+    
 const questions = () => {
     return inquirer.prompt([
         {
@@ -90,6 +84,13 @@ const questions = () => {
                     return false;
                 }
             }
+        },
+        {
+            type: 'list',
+            name: 'license',
+            message: 'Please choose a license for your project.',
+            choices: ['MIT', 'GNU GPLv3']
+            
         },
         {
             type: 'input',
