@@ -55,7 +55,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'usage',
-            message: 'Please provide a usage instructions for your project.',
+            message: 'Please provide usage instructions for your project.',
             validate: nameInput => {
                 if (nameInput) {
                     return true;
@@ -67,7 +67,7 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'contributers',
+            name: 'contributors',
             message: 'Please provide the names of those who contributed to your project.',
             validate: nameInput => {
                 if (nameInput) {
