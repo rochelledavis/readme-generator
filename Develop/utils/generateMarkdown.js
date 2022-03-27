@@ -5,7 +5,7 @@ function renderLicenseBadge(license) {
     if (!license) {
         return ''
     } else {
-    return `https://img.shields.io/badge/license-${license}-green`
+    return `[![License](https://img.shields.io/badge/license-${license}-green)`
     };
 };
 
@@ -16,7 +16,7 @@ function renderLicenseLink(license) {
     if (!license) {
         return ''
     } else {
-    return `https://choosealicense.com/licenses/${license.value}/`
+    return `https://choosealicense.com/licenses/${license}/`
     };
 };
 
@@ -40,12 +40,12 @@ function generateMarkdown(data) {
 ${data.description}
 
 ## Table of Contents
-1. [Installation] (#Installation)
-2. [Usage] (#Usage)
-3. [Contributing] (#Contributing)
-4. [Tests] (#Tests)
-5. [License] (#License)
-6. [Questions] (#Questions)
+1. [Installation] (#installation)
+2. [Usage] (#usage)
+3. [Contributing] (#contributing)
+4. [Tests] (#tests)
+5. [License] (#license)
+6. [Questions] (#questions)
 
 ## Installation
 ${data.installation}
@@ -60,11 +60,12 @@ ${data.contributors}
 ${data.test}
 
 ## License
-${renderLicenseSection(data.license)}
-${renderLicenseLink(data.license)}
+${renderLicenseSection()} ${data.license}
+${renderLicenseLink()}
 
 ## Questions
 If you need to get ahold of me, you can find me on GitHub at https://github.com/${data.github}
+
 You can also reach me via email at ${data.email}
 `;
 }
