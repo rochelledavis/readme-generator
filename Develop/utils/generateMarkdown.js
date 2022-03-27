@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
 
-    if (!license) {
+    if (license === 'None') {
         return ''
     } else {
     return `![License](https://img.shields.io/badge/license-${license}-green)`
@@ -13,10 +13,16 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
 
-    if (!license) {
+    if (license === 'None') {
         return ''
-    } else {
-    return `https://choosealicense.com/licenses/${license}/`
+    } else if (license === 'Apache') {
+    return 'https://opensource.org/licenses/Apache-2.0'
+    }else if (license === 'Boost') {
+    return 'https://www.boost.org/LICENSE_1_0.txt'
+    } else if (license === 'GNU GPLv3') {
+    return 'https://www.gnu.org/licenses/agpl-3.0'
+    } else if (license === 'MIT') {
+        return 'https://opensource.org/licenses/MIT'
     };
 };
 
@@ -27,7 +33,7 @@ function renderLicenseSection(license) {
     if (license === "None") {
         return 'This project does not have a license.'
     } else {
-    return `This project is licensed through `
+    return `This project is licensed through ${license} `
     };
 };
 
@@ -60,7 +66,7 @@ ${data.contributors}
 ${data.test}
 
 ## License
-${renderLicenseSection(data.license)} ${data.license}
+${renderLicenseSection(data.license)}
 ${renderLicenseLink(data.license)}
 
 ## Questions

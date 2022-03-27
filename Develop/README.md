@@ -1,8 +1,8 @@
-# Rochelle
-![License](https://img.shields.io/badge/license-Boost-green)
+# README Generator
+![License](https://img.shields.io/badge/license-MIT-green)
 
 ## Description
-alksdjf
+To ensure a quality and professional README, this project allows for you to utilize the command line to generate your project's README for you. 
 
 ## Table of Contents
 -[Installation](#installation)  
@@ -13,22 +13,22 @@ alksdjf
 -[Questions](#questions)  
 
 ## Installation
-alksdfj
+You will need to clone this repo and install node.js and npm inquirer.
 
 ## Usage
-aslkdfj
+Use this app anytime you need a README generated. 
 
 ## Contributing
-asdlkfjh
+Rochelle Davis
 
 ## Tests
-aklsdjhf
+npm test
 
 ## License
-This project is licensed through  Boost
-https://choosealicense.com/licenses/Boost/
+This project is licensed through MIT 
+https://opensource.org/licenses/MIT
 
 ## Questions
-If you need to get ahold of me, you can find me on GitHub at https://github.com/aklsjdhf
+If you need to get ahold of me, you can find me on GitHub at https://github.com/rochelledavis
 
-You can also reach me via email at ajksdfh
+You can also reach me via email at k.rochelle221@gmail.com
