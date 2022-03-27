@@ -89,23 +89,7 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'Please choose a license for your project.',
-            choices: [
-                { name: 'Apache',
-                value: 'apache-2-0'
-                },
-                { name: 'Boost',
-                value: 'bsl-1.0'
-                },
-                { name: 'GNU GPLv3',
-                value: 'GPL-3.0'
-                },
-                { name: 'MIT',
-                value: 'mit'
-                },
-                { name: 'None',
-                value: ''
-                },
-            ],  
+            choices: [ 'Apache', 'Boost', 'GNU GPLv3', 'MIT', 'None'],  
         },
         {
             type: 'input',
@@ -135,14 +119,6 @@ const questions = () => {
         },
     ])
 };
-
-// questions()
-//     .then(answers => {
-//         return generateMarkdown(answers);
-//     })
-//     .then((data) => {
-//         return writeToFile(data);
-//     });
 
 // TODO: Create a function to write README file
 const writeToFile = data => {

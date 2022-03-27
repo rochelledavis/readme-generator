@@ -5,7 +5,7 @@ function renderLicenseBadge(license) {
     if (!license) {
         return ''
     } else {
-    return `[![License](https://img.shields.io/badge/license-${license}-green)`
+    return `![License](https://img.shields.io/badge/license-${license}-green)`
     };
 };
 
@@ -34,18 +34,18 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
     return `# ${data.title}
-    ${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
 
 ## Description
 ${data.description}
 
 ## Table of Contents
-1. [Installation] (#installation)
-2. [Usage] (#usage)
-3. [Contributing] (#contributing)
-4. [Tests] (#tests)
-5. [License] (#license)
-6. [Questions] (#questions)
+-[Installation](#installation)  
+-[Usage](#usage)  
+-[Contributing](#contributing)  
+-[Tests](#tests)  
+-[License](#license)  
+-[Questions](#questions)  
 
 ## Installation
 ${data.installation}
@@ -60,8 +60,8 @@ ${data.contributors}
 ${data.test}
 
 ## License
-${renderLicenseSection()} ${data.license}
-${renderLicenseLink()}
+${renderLicenseSection(data.license)} ${data.license}
+${renderLicenseLink(data.license)}
 
 ## Questions
 If you need to get ahold of me, you can find me on GitHub at https://github.com/${data.github}
