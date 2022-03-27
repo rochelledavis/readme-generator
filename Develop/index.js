@@ -89,8 +89,23 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'Please choose a license for your project.',
-            choices: ['MIT', 'GNU GPLv3']
-            
+            choices: [
+                { name: 'Apache',
+                value: 'apache-2-0'
+                },
+                { name: 'Boost',
+                value: 'bsl-1.0'
+                },
+                { name: 'GNU GPLv3',
+                value: 'GPL-3.0'
+                },
+                { name: 'MIT',
+                value: 'mit'
+                },
+                { name: 'None',
+                value: ''
+                },
+            ],  
         },
         {
             type: 'input',
