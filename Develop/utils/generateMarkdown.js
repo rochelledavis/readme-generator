@@ -31,7 +31,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
     
     if (license === "None") {
-        return 'This project does not have a license.'
+        return 'This project does not currently have a license.'
     } else {
     return `This project is licensed through ${license} `
     };
