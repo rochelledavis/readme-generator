@@ -13,10 +13,10 @@ To ensure a quality and professional README, this project allows for you to util
 -[Questions](#questions)  
 
 ## Installation
-You will need to clone this repo and install node.js and npm inquirer.
+You will need to clone this repo and install node.js and npm inquirer
 
 ## Usage
-Use this app anytime you need a README generated. 
+Use this app anytime you need a README generated
 
 ## Contributing
 Rochelle Davis

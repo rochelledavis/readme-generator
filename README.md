@@ -18,6 +18,8 @@ You will need to clone this repo and install node.js and npm inquirer.
 ## Usage
 Use this app anytime you need a README generated. 
 
+View the app in action here: https://drive.google.com/file/d/1h6SQ3kR5JSMWOIoLM2uV6VvwC54Jt4Un/view?usp=sharing
+
 ## Contributing
 Rochelle Davis
 
